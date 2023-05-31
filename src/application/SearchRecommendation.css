@@ -1,0 +1,39 @@
+.sidebarButton:hover {
+	-fx-border-color: #fbfcf8;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}
+
+.exitButton:hover {
+	-fx-border-color: #ff0000;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}
+
+.saveButton:hover {
+	-fx-border-color: #4D90CD;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}
+
+.profileButton:hover {
+	-fx-border-color: #4D90CD;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0.0%, #207BCF 25.0%, #1973C9 75.0%, #0A65BF 100.0%);
+    -fx-text-fill: white;
+}
+
+.list-cell{
+    -fx-font-size: 24.0;
+    -fx-font-family: Serif;
+    -fx-padding: 0px 0px 0px 50px;
+}
+
+.list-cell:even { 
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="800.0" stylesheets="@DraftRecommendation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DraftRecommendationController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="842.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="draft" layoutX="34.0" layoutY="11.0" prefHeight="851.0" prefWidth="733.0" wrapText="true">
+                     <font>
+                        <Font name="PT Serif" size="14.0" />
+                     </font></TextArea>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="77.0" prefWidth="800.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#000000b2" layoutX="24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommendation Letter Draft" wrappingWidth="245.74598693847656" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="PT Serif" size="17.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="709.0" layoutY="18.0" onAction="#saveButtonAction" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #f7f7f7;" styleClass="saveButton" text="Save" textFill="#4d90cd">
+                     <font>
+                        <Font name="Serif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow color="#4d90cd80" />
+               </effect>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

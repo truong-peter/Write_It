@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1233.0" style="-fx-background-color: #f7f7f7;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateRecommendationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="700.0" layoutX="3.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1085.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.47115384615384615" endY="0.8701923076923077" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d7d7d7" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow color="#0000009a" />
+         </effect>
+      </Rectangle>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="111.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/pictures/logo2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Home" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9f9f7e5" glyphName="HOME" size="18" text="" wrappingWidth="25.571428298950195" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#accountButtonAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Profile" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="USER" size="18" wrappingWidth="25.714285850524902" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Settings" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="GEAR" size="18" wrappingWidth="26.14285659790039" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#aboutUsButtonAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="About" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="BOOK" size="18" wrappingWidth="25.571428298950195" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <AnchorPane prefHeight="194.0" prefWidth="150.0">
+               <children>
+                  <Button layoutX="43.0" layoutY="351.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#logoutButtonAction" style="-fx-background-color: #4D90CD;" text="Log Out" textFill="#f7f7f7e5">
+                     <font>
+                        <Font name="PT Serif" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f9faf7e4" glyphName="TIMES" size="16" wrappingWidth="18.285715103149414" />
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <BorderPane layoutX="148.0" layoutY="14.0" prefHeight="700.0" prefWidth="1085.0" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#000000b2" layoutX="24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new Recommendation" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="PT Serif" size="17.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="exitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1011.0" layoutY="18.0" onAction="#exitButtonAction" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: #f7f7f7;" styleClass="exitButton" text="Exit" textFill="RED">
+                     <font>
+                        <Font name="Serif Regular" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="createRecommendationButton" alignment="CENTER" contentDisplay="CENTER" layoutX="934.0" layoutY="18.0" onAction="#createRecommendation" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #f7f7f7;" styleClass="saveButton" text="Create" textFill="#4d90cd">
+                     <font>
+                        <Font name="Serif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow color="#4d90cd80" />
+               </effect>
+            </AnchorPane>
+         </top>
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane prefHeight="616.0" prefWidth="1070.0" style="-fx-background-color: #f7f7f7;">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="85.0" layoutY="23.0" prefHeight="571.0" prefWidth="901.0" spacing="15.0" style="-fx-background-color: #f7f7f7;" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="927.0" spacing="15.0">
+                                 <children>
+                                    <Label text="Student's First Name:">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="firstNameField" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Student's Last Name:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="1.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="lastNameField" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="524.0" spacing="15.0">
+                                 <children>
+                                    <Label text="Gender:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="82.0" right="1.0" />
+                                       </padding>
+                                    </Label>
+                                    <ChoiceBox fx:id="genderChoiceBox" prefWidth="125.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ChoiceBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="524.0" spacing="15.0">
+                                 <children>
+                                    <Label text="Target School's Name:">
+                                       <padding>
+                                          <Insets left="-8.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="schoolNameField" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="524.0" spacing="15.0">
+                                 <children>
+                                    <Label text="Current Date:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="45.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets right="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="datePicker" prefWidth="125.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="524.0" spacing="15.0">
+                                 <children>
+                                    <Label text="Program:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="72.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets right="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ChoiceBox fx:id="programChoiceBox" prefWidth="125.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></ChoiceBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="524.0" spacing="15.0">
+                                 <children>
+                                    <Label text="First Semester Taken:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="-7.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets right="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ChoiceBox fx:id="semesterChoiceBox" prefWidth="125.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ChoiceBox>
+                                    <TextField fx:id="yearField" prefHeight="25.0" prefWidth="60.0" promptText="year" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="55.0" prefWidth="901.0" spacing="15.0">
+                                 <children>
+                                    <Label alignment="TOP_LEFT" prefHeight="46.0" prefWidth="132.0" text="Other Courses:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="35.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets right="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox prefHeight="49.0" prefWidth="198.0">
+                                       <children>
+                                          <MenuButton alignment="CENTER" mnemonicParsing="false" popupSide="TOP" prefHeight="27.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Courses">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false">
+                                                   <graphic>
+                                                      <ListView fx:id="courseListView" prefHeight="150.0" prefWidth="300.0" />
+                                                   </graphic>
+                                                </MenuItem>
+                                             </items>
+                                             <font>
+                                                <Font name="PT Serif" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </MenuButton>
+                                          <Label prefHeight="17.0" prefWidth="196.0" text="(CTRL + CLICK FOR MULTI)">
+                                             <font>
+                                                <Font name="PT Serif" size="11.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="25.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="-5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <Button onAction="#handleClearSelection" prefHeight="27.0" prefWidth="60.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" text="Clear">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="PT Serif" size="13.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="80.0" prefWidth="901.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Letter Grade:">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="1.0" right="11.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <HBox fx:id="gradeHBox" prefHeight="100.0" prefWidth="590.0" spacing="15.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="96.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="77.0" prefWidth="927.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="126.0" text="Student's Personal&#10;Characteristics:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox prefHeight="52.0" prefWidth="213.0">
+                                       <children>
+                                          <MenuButton alignment="CENTER" mnemonicParsing="false" popupSide="TOP" prefWidth="200.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Characteristics">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false">
+                                                   <graphic>
+                                                      <ListView fx:id="personalListView" prefHeight="150.0" prefWidth="200.0" />
+                                                   </graphic>
+                                                </MenuItem>
+                                             </items>
+                                             <font>
+                                                <Font name="PT Serif" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </MenuButton>
+                                          <Label prefHeight="21.0" prefWidth="197.0" text="(CTRL + CLICK FOR MULTI)">
+                                             <font>
+                                                <Font name="PT Serif" size="11.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="25.0" top="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="126.0" text="Student's Academic&#10;Characteristics:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="PT Serif" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox prefHeight="52.0" prefWidth="250.0">
+                                       <children>
+                                          <MenuButton alignment="CENTER" mnemonicParsing="false" popupSide="TOP" prefWidth="200.0" style="-fx-border-color: #000000; -fx-border-width: 0px; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Characteristics">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false">
+                                                   <graphic>
+                                                      <ListView fx:id="academicListView" prefHeight="150.0" prefWidth="400.0" />
+                                                   </graphic>
+                                                </MenuItem>
+                                             </items>
+                                             <font>
+                                                <Font name="PT Serif" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </MenuButton>
+                                          <Label prefHeight="21.0" prefWidth="198.0" text="(CTRL + CLICK FOR MULTI)">
+                                             <font>
+                                                <Font name="PT Serif" size="11.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="25.0" top="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="2.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+               <BorderPane.margin>
+                  <Insets top="1.0" />
+               </BorderPane.margin>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

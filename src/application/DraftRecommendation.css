@@ -1,0 +1,14 @@
+.draft {
+	-fx-font-size: 14.0;
+    -fx-font-family: Serif;
+}
+
+.exitButton:hover {
+	-fx-border-color: #ff0000;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}
+
+.saveButton:hover {
+	-fx-border-color: #4D90CD;
+	-fx-border-width: 0.0px 0.0px 3.0px 0.0px;
+}

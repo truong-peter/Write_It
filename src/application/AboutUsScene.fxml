@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1233.0" stylesheets="@MainMenuScene.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutUs">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="700.0" layoutX="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1083.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.47115384615384615" endY="0.8701923076923077" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d7d7d7" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow color="#0000009a" />
+         </effect>
+      </Rectangle>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="111.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/pictures/logo2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Home" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9f9f7e5" glyphName="HOME" size="18" text="" wrappingWidth="25.571428298950195" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#accountButtonAction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Profile" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="USER" size="18" wrappingWidth="25.714285850524902" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="Settings" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="GEAR" size="18" wrappingWidth="26.14285659790039" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-background-color: #4D90CD;" styleClass="sidebarButton" text="About" textFill="#f7f7f7e5">
+               <font>
+                  <Font name="PT Serif Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#f9faf7e4" glyphName="BOOK" size="18" wrappingWidth="25.571428298950195" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <AnchorPane prefHeight="194.0" prefWidth="150.0">
+               <children>
+                  <Button layoutX="43.0" layoutY="351.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#logoutButtonAction" style="-fx-background-color: #4D90CD;" text="Log Out" textFill="#f7f7f7e5">
+                     <font>
+                        <Font name="PT Serif" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f9faf7e4" glyphName="TIMES" size="16" wrappingWidth="18.285715103149414" />
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <ScrollPane layoutX="150.0" layoutY="192.0" prefHeight="700.0" prefWidth="1083.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <BorderPane prefHeight="1341.0" prefWidth="919.0">
+               <center>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="830.0" prefWidth="730.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text layoutX="40.0" layoutY="48.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Write-It, the desktop application that streamlines the process of writing &#10;recommendations for students applying for higher education. Created by Bryan&#10;Melo, Peter Tam, Peter Truong, and Jonathan Willits, Write-It is designed to solve the &#10;common problem that faculties face when compiling recommendation letters for their students.&#10;&#10;As a faculty member, you understand the importance of providing a detailed and compelling &#10;recommendation for your student's college or university applications. However, this process &#10;can be time-consuming and cumbersome, especially if you have to write multiple &#10;recommendations for the same student applying to multiple schools. With Write-It, you can &#10;easily create, store, and reuse recommendation letters, saving you time and effort in the long &#10;run.&#10;&#10;Our vision for Write-It is to provide an open-source and free faculty recommendation &#10;compiler that simplifies the recommendation letter writing process. We believe that by &#10;making this tool available to everyone, we can help faculties everywhere save time and focus &#10;on what really matters: helping their students succeed.&#10;&#10;With Write-It, you can customize your recommendations for each student, including specific &#10;details and personal anecdotes that showcase their strengths and achievements. You can &#10;also keep track of the recommendations you've written for each student and reuse them in &#10;the future if they apply to other schools.&#10;&#10;We understand the importance of privacy and security regarding student data, which &#10;is why Write-It is designed with the utmost care and attention to detail. Your data is stored &#10;locally on your computer, and you have complete control over who has access to it.&#10;&#10;We are committed to providing the best possible user experience with Write-It and  &#10;welcome your feedback and suggestions. We hope our application will be a valuable &#10;tool for faculties everywhere and help make the recommendation letter writing process &#10;more efficient and enjoyable. Thank you for choosing Write-It." wrappingWidth="683.072998046875">
+                           <font>
+                              <Font name="PT Serif" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="30.0" />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <VBox prefHeight="481.0" prefWidth="959.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="142.0" prefWidth="920.0">
+                           <children>
+                              <Text fill="#000000b3" layoutX="453.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" wrappingWidth="158.99998471140862">
+                                 <font>
+                                    <Font name="PT Serif Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="116.0" layoutX="524.0" layoutY="71.0" startX="-100.0" stroke="#0000007e" />
+                              <Text fill="#4d90cd" layoutX="300.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write-It was created with a simple mission: simplify the recommendation letter &#10;writing process for faculties." textAlignment="CENTER">
+                                 <font>
+                                    <Font name="PT Serif" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <ImageView fitHeight="318.0" fitWidth="1064.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../resources/pictures/AboutUsBackgroud.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
